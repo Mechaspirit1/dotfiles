@@ -1,0 +1,60 @@
+[window]
+dimensions = {columns = 125, lines = 40}
+padding = { x = 10, y = 10 }
+dynamic_padding = true
+opacity = 1.85
+blur = true
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
+
+[font]
+normal = { family = "Iosevka Term", style = "Normal" }
+bold = { family = "Iosevka Term", style = "Bold" }
+italic = { family = "Iosevka Term", style = "Italic" }
+size = 12
+
+[colors.primary]
+foreground = "#c0caf5"
+background = "#1a1b26"
+
+[colors.cursor]
+text = "#1a1b26"
+cursor = "#c0caf5"
+
+[colors.selection]
+text = "#c0caf5"
+background = "#283457"
+
+[colors.normal]
+black = "#15161e"
+red = "#f7768e"
+green = "#9ece6a"
+yellow = "#e0af68"
+blue = "#7aa2f7"
+magenta = "#bb9af7"
+cyan = "#7dcfff"
+white = "#a9b1d6"
+
+[colors.bright]
+black = "#a9b1d6"
+red = "#f7768e"
+green = "#9ece6a"
+yellow = "#e0af68"
+blue = "#7aa2f7"
+magenta = "#bb9af7"
+cyan = "#7dcfff"
+white = "#c0caf5"
+
+[selection]
+save_to_clipboard = true
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[mouse]
+hide_when_typing = true
+
+[env]
+TERM = "xterm-256color"
