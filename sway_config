@@ -237,12 +237,31 @@ bar {
     colors {
         statusline #ffffff
         background #323232
-        inactive_workspace #32323200 #32323200 #32323200
+       inactive_workspace #32323200 #32323200 #32323200
     }
 }
-default_border pixel 2
-client.focused #bb9af7 #bb9af7 #bb9af7 #bb9af7 #bb9af7 
+
+input type:keyboard {
+    xkb_layout us
+    xkb_variant intl
+    xkb_options grp:alt_shift_toggle
+}
+
+set $clear #ffffff00
+
+default_border pixel 1
+
+client.focused #bb9af7 #bb9af7 #bb9af7 #bb9af7 #bb9af7
+client.unfocused #333333 #222222 #888888 #292d2e $clear
+client.focused_inactive  #333333 #5f676a #ffffff #484e50 $clear
+
+seat seat0 xcursor_theme "Adwaita" 24
+exec_always gsettings set org.gnome.desktop.interface cursor-theme "Adwaita"
+exec_always gsettings set org.gnome.desktop.interface cursor-size 24
+
 gaps inner 10
 gaps outer 10
+
 exec pipewire
+
 include /etc/sway/config.d/*
