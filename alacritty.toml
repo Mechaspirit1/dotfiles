@@ -1,8 +1,8 @@
 [window]
-dimensions = {columns = 125, lines = 40}
+dimensions = {columns = 125, lines = 25}
 padding = { x = 10, y = 10 }
 dynamic_padding = true
-opacity = 1.85
+opacity = 0.85
 blur = true
 
 [cursor]
@@ -13,6 +13,20 @@ normal = { family = "Iosevka Term", style = "Normal" }
 bold = { family = "Iosevka Term", style = "Bold" }
 italic = { family = "Iosevka Term", style = "Italic" }
 size = 12
+
+[selection]
+save_to_clipboard = true
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[mouse]
+hide_when_typing = true
+
+[env]
+TERM = "xterm-256color"
+white = "#fce8c3"
 
 [colors.primary]
 foreground = "#c0caf5"
@@ -45,16 +59,3 @@ blue = "#7aa2f7"
 magenta = "#bb9af7"
 cyan = "#7dcfff"
 white = "#c0caf5"
-
-[selection]
-save_to_clipboard = true
-
-[scrolling]
-history = 10000
-multiplier = 3
-
-[mouse]
-hide_when_typing = true
-
-[env]
-TERM = "xterm-256color"

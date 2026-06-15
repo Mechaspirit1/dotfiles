@@ -40,6 +40,8 @@ syntax reset
 
 set background=dark
 
+:hi Statement term=bold cterm=bold gui=bold
+
 " Cursor line
 hi CursorLine   cterm=NONE ctermbg=0
 
