@@ -10,4 +10,11 @@
 - Font Awesome
 - Iosevka Term & Iosevka Term Slab (ttf)
 
-remember to install all the necessary components and edit out the display specifier before running setup.sh
+Remeber to install all necessary dependencies and to edit out the display specifier in the sway config
+
+# Reference screenshots
+## Normal setup
+![Normal setup](https://imgur.com/BUQbviW.png)
+## TMUX via SSH
+![Tmux via ssh](https://imgur.com/XNujMzH.png)
+
